@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: pi.dev.day
+---
+testFramework: junit
+sourceLanguage: java
