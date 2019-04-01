@@ -1,5 +1,6 @@
 package pi.dev.day;
 
+import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Header;
 import io.micronaut.http.client.annotation.Client;
@@ -11,7 +12,7 @@ import pi.dev.day.model.User;
 public interface GithubClient {
 
 	@Get("graphql")
-	String queryGraph(String query);
+	String queryGraph(@Body String query);
 
 	@Get("user")
 	User getCurrentUser();
