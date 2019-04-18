@@ -21,8 +21,7 @@ Now we can send your SSH key to your Pi which will allow us to connect without e
 
 (Aside:  SD Cards can be encrypted in general but in this case the cards have two partitions, one being the Boot partition and the other being the actual root filesystem for the Pi operation system.  If we encrypted the root filesystem, the boot loader would have no way to decrypt it and our Pi would remain dead.  One could create a separate encrypted partition to store user files but this is out of the scope of this dev day).
 
-
-#### Step 4: Secure SSH Daemon
+##### Step 4: Secure SSH Daemon
 Now that we have your SSH key on the Pi, we can make the SSH Daemon a little more secure, by disabling password logins.  It is *very* important that you ensure your SSH Key allows you to login to your Pi without entering in a password before running the following script.  If you have confirmed your SSH Key works, please run ```secure.sh```
 
 This script disables Password Login and Root Login so the only way to login would be to login to your user with your SSH Key.

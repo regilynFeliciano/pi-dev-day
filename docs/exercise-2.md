@@ -1,16 +1,21 @@
-### Exercise 2 - Pull Requests Layout
+### Exercise 2 - Devlight Layout
 
-Write a service that gets **open** PR's from a users github `Event`s. [This API](https://developer.github.com/v3/activity/events/) might help.
+Configure the `DevlightClient` by adding a bean in `ApplicationConfiguration`.
 
-Then add a `StateList` of `PullRequest`s to your `ApplicationState` and have it scheduled to refresh your state every minute by calling your service.
+__Note:__ You may be provided with a base uri to use for the client. If not, use the 2 arg constructor.
 
-Create a `PullRequestsLayout` that displays the title and a list of PR's from the `ApplicationState`. Some basic `DisplayCompoents` have been provided for you :)
+Your layout needs the following parts:
 
-Add two listeners that `Increment` and `Decrement` the state of `PullRequest`s. The listeners should refresh the display after incrementing/decrementing the state.
+* A list of light states that you can scroll through and select from.
 
-__Hint:__ Custom listeners implement `GpioPinListenerDigital`.
+* Two listeners to goto the **next** and **previous** states of a list when you scroll **up** and **down** with the joystick.
 
-__Hint:__ Take the `PinState` into account on the `GpioPinDigitalStateChangeEvent` when handling the change event, or you may run your code multiple times!
+* One listener that changes the devlight state to the selected light state when you click a button. 
 
-__Success Criteria:__ Displaying a list of PR's and being able to scroll through them with your joystick. 
-At this point you should also be able to press on the **Center Joystick** to cycle through your parent layouts.
+__Note:__ If you are getting 404 - user not found exception, you need to be added to the devlight database.
+
+__Hint:__ There is a `LightStateFactory` you can utilize or you can create custom light states with `HueConstants`. 
+
+__Hint:__ If you make the listeners generic, you can use them for the next exercise :)
+
+__Success Criteria:__ Display at least 5 `LightState`s that you can scroll through and select from. When you select a light state your hue bulb should respond with the intended state. At this point you should also be able to press on the **center joystick** to cycle through your primary layouts.

@@ -1,15 +1,11 @@
-### Exercise 3 - Pull Request Details Layout
+### Exercise 3 - Pull Requests Layout
 
-Create a `PullRequestDetailsLayout` that displays the following information on your current `PullRequest`:
+Write a service that gets **open** PR's from a users github `Event`s. [This API](https://developer.github.com/v3/activity/events/) might help.
 
-* Name
-* Number
-* Merge State
+Then add `PullRequest`s to your `ApplicationState` and have it scheduled to refresh your state every minute.
 
-Add the layout to `secondaryLayouts` in the `LayoutFactory`.
+Create a `PullRequestsLayout` that displays the title and a list of PR's from the `ApplicationState`.
 
-Now we need two listeners. One in the `PullRequestDetailsLayout` to navigate to the **current primary layout**, and one in the `PullRequestLayout` to navigate to the current pull request details.
+Add two listeners for the `Next` and `Previous` the state of `PullRequest`s. The listeners should refresh the display after changing the state.
 
-__Bonus:__ Store the state of all the unique repositories amongst your PR's and display Repository info in the `PullRequestDetailsLayout`. 
-
-__Success Criteria:__ Being able to click into a PR and see it's details. You should also be able to navigate back to the list of PR's by clicking a button.
+__Success Criteria:__ Displaying a list of PR's and being able to scroll through them with your joystick.

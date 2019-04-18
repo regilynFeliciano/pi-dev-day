@@ -38,19 +38,17 @@ Once you are comfortable with how to use Micronaut it's time to put the two toge
 
 * Add the same github configuration in the `application.yml` as you did in the Micronaut Warm Up.
 
-* Read the [Development Workflow]() and [How to Use]() sections before you start the following exercises.
-
-__Hint:__ There are `DisplayComponents` that you can use to buffer basic components such as titles and lists for the following exercises.
+* Read the [Development Workflow](https://github.com/jtoplak/pi-naut/blob/master/docs/workflow.md) and [How to Use](https://github.com/jtoplak/pi-naut/blob/master/docs/how-to-use.md) sections before you start the following exercises.
 
 Complete the following exercises in order:
 
 [Exercise 1](docs/exercise-1.md) - Runtime stats layout
 
-[Exercise 2](docs/exercise-2.md) - Pull Request layout
+[Exercise 2](docs/exercise-2.md) - Devlight layout
 
-[Exercise 3](docs/exercise-3.md) - Pull Request detail layout
+[Exercise 3](docs/exercise-3.md) - Pull Requests layout
 
-[Exercise 4](docs/exercise-4.md) - Devlight layout
+[Exercise 4](docs/exercise-4.md) - Pull Request Detail layout
 
 #### Resources
 
@@ -60,14 +58,14 @@ Complete the following exercises in order:
 
 ### Choose Your Own Adventure!
 
-Implement a layout that tickles your fancy! Make a branch for your feature so that it can be easily merged. If you are stuck on what to do, here are some curated ideas :)
+* Implement a layout that tickles your fancy! Make a branch for your feature so that it can be easily merged. 
 
 * Write an integration with the devlights client that changes the light in your pod when a PR you contributed to gets approved, merged, and/or closed.
 
-* Create a PR feedback feature that displays an alert for you to re-check a PR when a `PushEvent` happens after you have `Requested Changes` on a PR.
+* Create a PR feedback feature that displays an alert for you to re-check a PR when a `PushEvent` happens after you have **requested changes** on a PR.
 
-**The one(s) who contributes the best feature branch will win a [Circuit Playground Express](https://www.adafruit.com/product/3333)! Layouts will be judged by relevance, creativity, and completeness.**
-s
+**Whoever contributes the best Pi feature(s) will win a [Circuit Playground Express](https://www.adafruit.com/product/3333)! Submissions will be judged by creativity, completeness, relevance, and overall awesomeness!**
+
 ### Fin
 
 If you Spring chickens are becoming Micronaut fans, there is a [Micronaut-Spring](https://github.com/Micronaut-projects/Micronaut-spring) project worth checking out that can be used to: 
