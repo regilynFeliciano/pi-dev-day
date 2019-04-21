@@ -10,7 +10,7 @@ Each Pi has been imaged with [Raspbian Lite](https://www.raspberrypi.org) and ha
 
 ### Getting Started
 
-* [Preparing your SD Card](docs/prepare-sd.md) - How to create an SD card.
+* [Preparing your SD Card](docs/prepare-sd.md) - (Optional - this will be provided to you for the Dev Day already prepared) How to create an SD card for this project.
 * [First Steps](docs/first-steps.md) - Connecting to and setting up your Pi
 * [Securing Your Pi](docs/secure-ssh.md) - Lock down your Pi
 * [Setup Wi-Fi](docs/wifi.md) - Configure your Wi-Fi
@@ -28,9 +28,9 @@ A Personal Access Token is an API key that let's you access Github data programa
 ### Exercises
 
 Although Micronaut applications have fast startup times (~1.5s), starting a Java application on a Pi does take more time (~20s on a Pi Zero and ~8s on a Pi 3B+).
-In addition `Pi4J` uses `WiringPi` under the covers (a python library for accessing the GPIO on DSM devices), and will likely not run on your local machine. 
+In addition `Pi4J` uses `WiringPi` under the covers (a python library for accessing the GPIO on DSM devices), and will likely not run on your local machine.
 
-As such, start with this [Micronaut Exercise](docs/micronaut-exercise.md) and create an application from scratch with the Micronaut CLI before you start developing on your Pi's. 
+As such, start with this [Micronaut Exercise](docs/micronaut-exercise.md) and create an application from scratch with the Micronaut CLI before you start developing on your Pi's.
 
 Once you are comfortable with how to use Micronaut it's time to put the two together!
 
@@ -58,7 +58,7 @@ Complete the following exercises in order:
 
 ### Choose Your Own Adventure!
 
-* Implement a layout that tickles your fancy! Make a branch for your feature so that it can be easily merged. 
+* Implement a layout that tickles your fancy! Make a branch for your feature so that it can be easily merged.
 
 * Write an integration with the devlights client that changes the light in your pod when a PR you contributed to gets approved, merged, and/or closed.
 
@@ -68,7 +68,7 @@ Complete the following exercises in order:
 
 ### Fin
 
-If you Spring chickens are becoming Micronaut fans, there is a [Micronaut-Spring](https://github.com/Micronaut-projects/Micronaut-spring) project worth checking out that can be used to: 
+If you Spring chickens are becoming Micronaut fans, there is a [Micronaut-Spring](https://github.com/Micronaut-projects/Micronaut-spring) project worth checking out that can be used to:
 
 * Integrate Spring components into a Micronaut application
 * Run Spring applications as Micronaut applications
