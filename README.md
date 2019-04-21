@@ -25,7 +25,7 @@ In addition to securing your Pi, you will need to generate a [Personal Access To
 
 A Personal Access Token is an API key that let's you access Github data programatically. It will be used for the following Github integration.
 
-### Exercises
+### Exercises (#exercises)
 
 Although Micronaut applications have fast startup times (~1.5s), starting a Java application on a Pi does take more time (~20s on a Pi Zero and ~8s on a Pi 3B+).
 In addition `Pi4J` uses `WiringPi` under the covers (a python library for accessing the GPIO on DSM devices), and will likely not run on your local machine.
