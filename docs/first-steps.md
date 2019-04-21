@@ -5,6 +5,7 @@ The first thing you'll want to do is connect to your Raspberry Pi Zero to set it
 
 #### Plugging it in
 To begin, connect your Pi by plugging it into the micro USB marked DATA on the diagram below.  This USB plug will not only power but allow us to transfer data between your computer and the Pi.  The USB marked POWER is to power the device only.
+
 ![Pi Zero Diagram](pi-zero.png "By Efa, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=53282392")
 
 After you have plugged in the device, you should see a flickering green light on the Pi.  The Pi Zero is doing its first run initialization at this point, so you should give it a few minutes before carrying on.  One thing to note however is that subsequent boots will not take as long.
