@@ -20,9 +20,11 @@ Note:  You will be prompted to trust the IP/hostname when you make a connection 
 #### Initial Config
 On the Raspberry Pi, we're running an linux distribution called Rasbian, configured specifically to support the Pi.  It comes with a user friendly tool that we can use to change your password.  Run `sudo raspi-config` which will prompt you for the password for the `pi` user which is still `raspberry`.  A GUI will appear.  You can use the `arrow keys` to navigate through the menu options/settings, `enter` to accept a menu option and `escape` to return to the previous menu.
 
-The first two things we're going to do is Expand the Filesystem and change the password for the `pi` user.  Rasbian when prepared on the SD Card does not use the entire SD cards size, leaving a bunch of unused space.  Let's solve that now by selecting the `Expand the Filesystem` option in the menu.  You screen will flicker with commands but eventually you'll be brought back to the GUI.
+The first two things we're going to do is Expand the Filesystem and change the password for the `pi` user.  Rasbian when prepared on the SD Card does not use the entire SD cards size, leaving a bunch of unused space.  Let's solve that now by selecting the `Advanced Options -> Expand the Filesystem` option in the menu.  Your screen will flicker with commands but eventually you'll be brought back to the GUI. 
 
 Next, select Change User Password and follow the on-screen instructions to set a new password for the `pi` user.  Please remember this password.
+
+Next, select finish and choose the option to reboot the pi.
 
 Note:  The GUI is actually just a front-end for commands being run in the background.  In the chase of changing your password, the GUI simply ran the command `passwd`.
 
