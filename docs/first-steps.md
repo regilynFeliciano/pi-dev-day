@@ -18,7 +18,7 @@ To connect, run `ssh pi@raspberrypi.local`.  This command will attempt to make a
 Note:  You will be prompted to trust the IP/hostname when you make a connection for the first time.  This should be safe to do so if you're using the `.local` method of connecting.  If you are using an IP Address, you'll want to ensure the IP is correct.
 
 #### Initial Config
-On the Raspberry Pi, we're running an linux distribution called Rasbian, configured specifically to support the Pi.  It comes with a user friendly tool that we can use to change your password.  Run `sudo raspi-config` which will prompt you for the password for the `pi` user which is still `raspberry`.  A GUI will appear.  You can use the `arrow keys` to navigate through the menu options/settings, `enter` to accept a menu option and `escape` to return to the previous menu.
+On the Raspberry Pi, we're running a linux distribution called Rasbian, configured specifically to support the Pi.  It comes with a user friendly tool that we can use to change your password.  Run `sudo raspi-config` which will prompt you for the password for the `pi` user which is still `raspberry`.  A GUI will appear.  You can use the `arrow keys` to navigate through the menu options/settings, `enter` to accept a menu option and `escape` to return to the previous menu.
 
 The first two things we're going to do is Expand the Filesystem and change the password for the `pi` user.  Rasbian when prepared on the SD Card does not use the entire SD cards size, leaving a bunch of unused space.  Let's solve that now by selecting the `Expand the Filesystem` option in the menu.  You screen will flicker with commands but eventually you'll be brought back to the GUI.
 
