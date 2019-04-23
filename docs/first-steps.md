@@ -18,14 +18,14 @@ To connect, run `ssh pi@raspberrypi.local`.  This command will attempt to make a
 Note:  You will be prompted to trust the IP/hostname when you make a connection for the first time.  This should be safe to do so if you're using the `.local` method of connecting.  If you are using an IP Address, you'll want to ensure the IP is correct.
 
 #### Initial Config
-On the Raspberry Pi, we're running an linux distribution called Rasbian, configured specifically to support the Pi.  It comes with a user friendly tool that we can use to change your password.  Run `sudo raspi-config` which will prompt you for the password for the `pi` user which is still `raspberry`.  A GUI will appear.  You can use the `arrow keys` to navigate through the menu options/settings, `enter` to accept a menu option and `escape` to return to the previous menu.
+On the Raspberry Pi, we're running a linux distribution called Rasbian, configured specifically to support the Pi.  It comes with a user friendly tool that we can use to change your password.  Run `sudo raspi-config` which will prompt you for the password for the `pi` user which is still `raspberry`.  A GUI will appear.  You can use the `arrow keys` to navigate through the menu options/settings, `enter` to accept a menu option and `escape` to return to the previous menu.
 
 The first two things we're going to do is change the password for the `pi` user and expand the filesystem on the SD card.
 
 ##### Changing your Password
 The very first thing we want to do is change the default password for the user.  The user ```pi``` has a default password of ```raspberry```.  This means that if anyone were to connect to the device, they would be able to login immediately.  Let's change that.  Run `sudo raspi-config` and choose `Change User Password`.  Follow the on-screen prompts to change your username.  Later we will be setting up an easier way to login, but make sure it's memorable.
 
-Note:  The GUI is actually just a front-end for commands being run in the background.  In the chase of changing your password, the GUI simply ran the command `passwd`.
+Note:  The GUI is actually just a front-end for commands being run in the background.  For instance when you changed your password, the GUI simply ran the command `passwd`.
 
 ##### Expanding the Filesystem
 Rasbian when prepared on the SD Card does not use the entire SD cards size, leaving a bunch of unused space.  Let's solve that now by selecting the `Advanced Options -> Expand the Filesystem` option in the menu.  You screen will flicker with commands but eventually you'll be brought back to the GUI.
