@@ -24,9 +24,7 @@ The first two things we're going to do is Expand the Filesystem and change the p
 
 Next, select Change User Password and follow the on-screen instructions to set a new password for the `pi` user.  Please remember this password.
 
-Next, select finish and choose the option to reboot the pi.
-
-Note:  The GUI is actually just a front-end for commands being run in the background.  In the chase of changing your password, the GUI simply ran the command `passwd`.
+Note:  The GUI is actually just a front-end for commands being run in the background.  For instance when you changed your password, the GUI simply ran the command `passwd`.
 
 #### Installing the Prerequisites
 This Dev Day will require some prerequisite software.  When you first login you should be in your users home directory.  If you run `ls ~/` you will see a couple of script files ending in `.sh`  For now we will focus on `install.sh`.  This script pulls down and installs quite a lot of software that we'll need to either run our Micronaut projects or add some security on your Raspberry Pi.  This software includes:  `git`, `ufw`, `openjdk`, `python` and `wiringPi`.  In addition to software installation, it also pulls down an Adafruit project build specifically to show off the capabilities of the Bonnet screen connected to your Pi and enables and configures `ufw` or `Uncomplicated Firewall` only allowing connections to sshs default port of 22.
