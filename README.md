@@ -9,11 +9,13 @@ We will be using Java by leveraging [Pi4J](http://pi4j.com/) to access the GPIO 
 Each Pi has been imaged with [Raspbian Lite](https://www.raspberrypi.org) and has all the necessary configuration and libraries to run a Java application (you can skip **Preparing your SD Card**).
 
 ### Getting Started
+Steps marked with `*` are required for the project if you're doing it from scratch but are **optional** for this Dev Day as they will already be performed for you.
 
-* [Preparing your SD Card](docs/prepare-sd.md) - (Optional - this will be provided to you for the Dev Day already prepared) How to create an SD card for this project.
+* [Preparing your SD Card](docs/prepare-sd.md)`*` - How to create an SD card for this project.
 * [First Steps](docs/first-steps.md) - Connecting to and setting up your Pi
-* [Securing Your Pi](docs/secure-ssh.md) - Lock down your Pi
 * [Setup Wi-Fi](docs/wifi.md) - Configure your Wi-Fi
+* [Installing the Pre-requisites](docs/prerequisites.md)`*` - Installing the Pre-requisite Software
+* [Securing Your Pi](docs/secure-ssh.md) - Lock down your Pi
 
 ### Github Personal Access Token
 
