@@ -8,7 +8,7 @@ We will be using Java by leveraging [Pi4J](http://pi4j.com/) to access the GPIO 
 
 Each Pi has been imaged with [Raspbian Lite](https://www.raspberrypi.org) and has all the necessary configuration and libraries to run a Java application (you can skip **Preparing your SD Card**).
 
-### Getting Started
+### Getting Started with the Pi
 Steps marked with `*` are required for the project if you're doing it from scratch but are **optional** for this Dev Day as they will already be performed for you.
 
 * [Preparing your SD Card](docs/prepare-sd.md)`*` - How to create an SD card for this project.
@@ -19,7 +19,7 @@ Steps marked with `*` are required for the project if you're doing it from scrat
 
 ### Github Personal Access Token
 
-In addition to securing your Pi, you will need to generate a [Personal Access Token](https://github.com/settings/tokens) with the following permissions enabled:
+In addition to setting up and securing your Raspberry Pi, you will need to generate a [Personal Access Token](https://github.com/settings/tokens) with the following permissions enabled:
 * repo
 * admin:org
 * notifications
