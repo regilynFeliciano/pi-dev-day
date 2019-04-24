@@ -2,10 +2,10 @@
 
 Create a `PullRequestDetailsLayout` that displays the PR title and the following information on your **current** `PullRequest`:
 
-* Number
+* Number (int)
 * Mergeable (boolean)
 * Merge State (string description)
-* Review Comments
+* Review Comments (int)
 
 Now we need two listeners. One in the `PullRequestDetailsLayout` to navigate back to the `PullRequestLayout`, and one in the `PullRequestLayout` to navigate to the current `PullRequestDetailLayout`.
 

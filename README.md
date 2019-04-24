@@ -64,15 +64,27 @@ Complete the following exercises in order:
 
 Choose one of the following adventures:
 
-1. Create a layout that others can use and push it to a feature branch. If you can't think of anything, here are some pre-curated ideas.
+1. Create a layout or feature that others can use and push it to a feature branch. If you can't think of anything, here are some pre-curated ideas.
 
-    * Write an integration with the devlights client that changes the light in your pod when a PR gets approved, merged, and/or closed.
+    * Create a basic weather layout. If that isn't fancy enough, you could use a lookup for location by IP, or make it configurable for multiple locations... or both!
 
-    * Create a PR feedback feature that displays an alert for you to re-check a PR when a `PushEvent` happens after you have **requested changes** on a PR.
+    * Enhance the open Pull Requests feature by creating an alert that temporarily displays the event that occurred on that PR.
 
-    * Create a weather layout. It could either do a lookup for location by IP, or be configurable, or both... So many possibilities!
+    * Add a **Review Requested** layout that displays a list of PR's that you have been requested to review. If you think that is child play, enhance it by:
+    
+        * Making a PR feedback feature that displays an alert for you to re-check a PR when a `PushEvent` or `CommentEvent` happens after you have **requested changes**.
+        
+        * Create a feature that lets you approve a PR by clicking a button. In other words, an insta-approved button!
 
-**The best contribution will win a [Circuit Playground Express](https://www.adafruit.com/product/3333)! Submissions will be judged by completeness, code execution, and overall usefulness. If there is a tie, the winner will be decided by popular vote!**
+2. Use the Pi to automate your devlight without having to click a button. You could:
+
+    * Write an integration that changes the light in your pod when a PR gets approved, merged, and/or closed.
+
+    * Hook into some other API that changes your teams devlight on some event.
+    
+3. Stop doing anything Micronaut or Java related and do something cool that you can show or share.
+
+**The best overall contribution will win a [Circuit Playground Express](https://www.adafruit.com/product/3333)! Submissions will be judged by completeness and overall usefulness/awesomeness. If there is a tie, the winner will be decided by popular vote!**
 
 ### Fin
 
