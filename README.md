@@ -29,14 +29,16 @@ A Personal Access Token is an API key that let's you access Github data programa
 
 ### Exercises
 
-Although Micronaut applications have fast startup times (~1.5s), starting a Java application on a Pi does take more time (~20s on a Pi Zero and ~8s on a Pi 3B+).
-In addition `Pi4J` uses `WiringPi` under the covers (a python library for accessing the GPIO on DSM devices), and will likely not run on your local machine.
+Although Micronaut applications have fast startup times (~1.5s), starting a Java application on a Pi will take more time than usual (~20s on a Pi Zero and ~8s on a Pi 3B+).
+In addition, `Pi4J` uses `WiringPi` under the covers (a python library for accessing the GPIO on DSM devices) and cannot be installed on your local machine.
+As such, we will how to use the framework locally before we start developing on our Pi's.
 
-As such, start with this [Micronaut Exercise](docs/micronaut-exercise.md) and create an application from scratch with the Micronaut CLI before you start developing on your Pi's.
+Do this [Micronaut Exercise](docs/micronaut-exercise.md) and create an application from scratch using the Micronaut CLI. 
+If you get stuck, the solution to the exercise is the project included in this repository.
 
 Once you are comfortable with how to use Micronaut it's time to put the two together!
 
-* Clone [this seed project](https://github.com/jtoplak/pi-naut) and checkout the `oled-bonnet-seed` branch.
+* Fork [this](https://github.com/jtoplak/pi-naut) seed project and checkout the `oled-bonnet-seed` branch.
 
 * Add the same github configuration in the `application.yml` as you did in the Micronaut Warm Up.
 
@@ -50,7 +52,7 @@ Complete the following exercises in order:
 
 [Exercise 3](docs/exercise-3.md) - Pull Requests layout
 
-[Exercise 4](docs/exercise-4.md) - Pull Request Detail layout
+[Exercise 4](docs/exercise-4.md) - Pull Request Details layout
 
 #### Resources
 
@@ -60,13 +62,17 @@ Complete the following exercises in order:
 
 ### Choose Your Own Adventure!
 
-* Implement a layout that tickles your fancy! Make a branch for your feature so that it can be easily merged.
+Choose one of the following adventures:
 
-* Write an integration with the devlights client that changes the light in your pod when a PR you contributed to gets approved, merged, and/or closed.
+1. Create a layout that others can use and push it to a feature branch. If you can't think of anything, here are some pre-curated ideas.
 
-* Create a PR feedback feature that displays an alert for you to re-check a PR when a `PushEvent` happens after you have **requested changes** on a PR.
+    * Write an integration with the devlights client that changes the light in your pod when a PR gets approved, merged, and/or closed.
 
-**Whoever contributes the best Pi feature(s) will win a [Circuit Playground Express](https://www.adafruit.com/product/3333)! Submissions will be judged by creativity, completeness, relevance, and overall awesomeness!**
+    * Create a PR feedback feature that displays an alert for you to re-check a PR when a `PushEvent` happens after you have **requested changes** on a PR.
+
+    * Create a weather layout. It could either do a lookup for location by IP, or be configurable, or both... So many possibilities!
+
+**The best contribution will win a [Circuit Playground Express](https://www.adafruit.com/product/3333)! Submissions will be judged by completeness, code execution, and overall usefulness. If there is a tie, the winner will be decided by popular vote!**
 
 ### Fin
 
