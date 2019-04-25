@@ -27,16 +27,16 @@ A Personal Access Token is an API key that let's you access Github data programa
 
 Although Micronaut applications have fast startup times (~1.5s), starting a Java application on a Pi will take more time than usual (~20s on a Pi Zero and ~8s on a Pi 3B+).
 In addition, `Pi4J` uses `WiringPi` under the covers (a python library for accessing the GPIO on DSM devices) and cannot be installed on your local machine.
-As such, we will how to use the framework locally before we start developing on our Pi's.
+As such, we will first learn how to use the framework before we start developing on our Pi's.
 
 Do this [Micronaut Exercise](docs/micronaut-exercise.md) and create an application from scratch using the Micronaut CLI. 
-If you get stuck, the solution to the exercise is the project included in this repository.
+If you get stuck, the solution to the exercise is in the project included in this repo.
 
 Once you are comfortable with how to use Micronaut it's time to put the two together!
 
 * Fork [this](https://github.com/jtoplak/pi-naut) seed project and checkout the `oled-bonnet-seed` branch.
 
-* Add the same github configuration in the `application.yml` as you did in the Micronaut Warm Up.
+* Add the same github configuration in the `application.yml` as you did in the Micronaut exercise.
 
 * Read the [Development Workflow](https://github.com/jtoplak/pi-naut/blob/master/docs/workflow.md) and [How to Use](https://github.com/jtoplak/pi-naut/blob/master/docs/how-to-use.md) sections before you start the following exercises.
 
@@ -50,6 +50,8 @@ Complete the following exercises:
 
 [Exercise 4](docs/exercise-4.md) - Pull Request Details layout
 
+__Note:__ You can checkout the `oled-bonnet-example` branch for the solutions to these exercises.
+
 #### Resources
 
 * [GitHub API v3](https://developer.github.com/v3/)
@@ -60,7 +62,7 @@ Complete the following exercises:
 
 Choose one of the following adventures:
 
-1. Create a layout or feature that others can use and push it to a feature branch. If you can't think of anything, here are some pre-curated ideas.
+1. Create a layout or feature that others can use and push it to a feature branch. If you can't think of anything, here are some curated ideas.
 
     * Create a basic weather layout. If that isn't fancy enough, you could use a lookup for location by IP, or make it configurable for multiple locations... or both!
 
