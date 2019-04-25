@@ -4,7 +4,7 @@
 wget https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/startPiNaut.sh -P /opt/pi-naut/
 wget https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/stopPiNaut.sh -P /opt/pi-naut/
 
-cat > /etc/systemd/system/pi-naut.service << EOL
+sudo cat > /etc/systemd/system/pi-naut.service << EOL
 [Unit]
 Description=Java Pi Naut Service
 
