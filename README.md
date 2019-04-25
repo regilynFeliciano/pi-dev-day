@@ -6,15 +6,11 @@ __In this tutorial you will need a [Rasberry Pi Zero](https://www.raspberrypi.or
 
 We will be using Java by leveraging [Pi4J](http://pi4j.com/) to access the GPIO (General Purpose I/O). What's even funky fresher is that we are going to utilize some modern microservice patterns with [Micronaut](http://Micronaut.io/). A Spring inspired full stack microservice framework designed for building lightweight applications.
 
-Each Pi has been imaged with [Raspbian Lite](https://www.raspberrypi.org) and has all the necessary configuration and libraries to run a Java application (you can skip **Preparing your SD Card**).
+### Getting Started
 
-### Getting Started with the Pi
-Steps marked with `*` are required for the project if you're doing it from scratch but are **optional** for this Dev Day as they will already be performed for you.
-
-* [Preparing your SD Card](docs/prepare-sd.md)`*` - How to create an SD card for this project.
 * [First Steps](docs/first-steps.md) - Connecting to and setting up your Pi
 * [Setup Wi-Fi](docs/wifi.md) - Configure your Wi-Fi
-* [Installing the Pre-requisites](docs/prerequisites.md)`*` - Installing the Pre-requisite Software
+* [Installing the Pre-requisites](docs/prerequisites.md) - Installing the Pre-requisite Software
 * [Securing Your Pi](docs/secure-ssh.md) - Lock down your Pi
 
 ### Github Personal Access Token
@@ -44,7 +40,7 @@ Once you are comfortable with how to use Micronaut it's time to put the two toge
 
 * Read the [Development Workflow](https://github.com/jtoplak/pi-naut/blob/master/docs/workflow.md) and [How to Use](https://github.com/jtoplak/pi-naut/blob/master/docs/how-to-use.md) sections before you start the following exercises.
 
-Complete the following exercises in order:
+Complete the following exercises:
 
 [Exercise 1](docs/exercise-1.md) - Runtime stats layout
 
@@ -68,11 +64,11 @@ Choose one of the following adventures:
 
     * Create a basic weather layout. If that isn't fancy enough, you could use a lookup for location by IP, or make it configurable for multiple locations... or both!
 
-    * Enhance the open Pull Requests feature by creating an alert that temporarily displays the event that occurred on that PR.
+    * Enhance the Pull Requests layout by creating an alert that temporarily displays the event that occurred on that PR.
 
     * Add a **Review Requested** layout that displays a list of PR's that you have been requested to review. If you think that is child play, enhance it by:
     
-        * Making a PR feedback feature that displays an alert for you to re-check a PR when a `PushEvent` or `CommentEvent` happens after you have **requested changes**.
+        * Making a PR feedback feature that displays an alert for you to **re-check** a PR when a `PushEvent` or `CommentEvent` happens after you have **requested changes**.
         
         * Create a feature that lets you approve a PR by clicking a button. In other words, an insta-approved button!
 
