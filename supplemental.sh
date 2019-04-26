@@ -1,10 +1,10 @@
 #!/bin/bash
 # Fixes some post install stuff.
 
-wget -O startPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/startPiNaut.sh -P /opt/pi-naut/
-wget -O stopPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/stopPiNaut.sh -P /opt/pi-naut/
-chmod +x /opt/pi-naut/stopPiNaut.sh
-chmod +x /opt/pi-naut/startPiNaut.sh
+sudo wget -O startPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/startPiNaut.sh -P /opt/pi-naut/
+sudo wget -O stopPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/stopPiNaut.sh -P /opt/pi-naut/
+sudo chmod +x /opt/pi-naut/stopPiNaut.sh
+sudo chmod +x /opt/pi-naut/startPiNaut.sh
 
 cat > /etc/systemd/system/pi-naut.service << EOL
 [Unit]
