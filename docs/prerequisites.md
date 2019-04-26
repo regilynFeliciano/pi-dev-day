@@ -7,3 +7,10 @@ You'll need all of this to continue on with the `pi-naut` portion of the Dev Day
 If for some reason you can't run the example script above, or you get any errors, curl up into a ball and wait until someone comes to your rescue.
 
 Note:  From your home directory, you can also run `python Adafruit_Python_SSD1306/examples/buttons.py` after the install script runs. It will display some shapes on the screen that represent the bonnets built in Joystick and Buttons.  The screen should react to the button clicks and joystick movements you make.
+
+
+#### Post Install Fixes
+Unfortunately, we had to fix some stuff after we prepared the Raspberry Pi SD Cards for you.  To resolve some issues please run the following commands on your Raspberry Pi:
+`wget -O supplemental.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/supplemental.sh && chmod +x supplemental.sh && sudo ./supplemental.sh && sudo systemctl daemon-reload`
+
+This will reinstall a systemd service that will let us properly start and stop the java service when deploying/debugging.
