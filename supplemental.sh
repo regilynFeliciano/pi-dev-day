@@ -15,6 +15,8 @@ WorkingDirectory=/opt/pi-naut
 ExecStart=/opt/pi-naut/startPiNaut.sh
 ExecStop=/opt/pi-naut/stopPiNaut.sh
 SuccessExitStatus=143
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
