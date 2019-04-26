@@ -1,8 +1,8 @@
 #!/bin/bash
 # Fixes some post install stuff.
 
-sudo wget -O /opt/pi-naut/startPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/startPiNaut.sh
-sudo wget -O /opt/pi-naut/stopPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/stopPiNaut.sh
+wget -O /opt/pi-naut/startPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/startPiNaut.sh
+wget -O /opt/pi-naut/stopPiNaut.sh https://raw.githubusercontent.com/jtoplak/pi-dev-day/master/stopPiNaut.sh
 sudo chmod +x /opt/pi-naut/stopPiNaut.sh
 sudo chmod +x /opt/pi-naut/startPiNaut.sh
 
